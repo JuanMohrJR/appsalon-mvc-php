@@ -1,0 +1,38 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mix;
+
+.formulario {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    align-items: center;
+    label {
+        flex: 0 0 10rem
+    }
+
+    input {
+        flex: 0.5;
+        border: none;
+        padding: calc(var.$separacion / 4);
+        border-radius: 1rem;
+
+        &:disabled {
+            background-color: rgb(35, 109, 246);
+            color: black;
+            font-weight: 600;
+            cursor: not-allowed;
+        }
+    }
+
+
+}
+
+.pass {
+    color: aqua;
+    margin-left: 2rem;
+}

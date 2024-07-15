@@ -1,0 +1,22 @@
+{
+    "name": "ingcj/app-salon_php_mvc_js_sass",
+    "description": "Proyecto N7 PHP8, SASS, SQL, GULP.",
+    "autoload": {
+        "psr-4": {
+            "MVC\\" : "./",
+            "Controllers\\" : "./controllers",
+            "Model\\" : "./models",
+            "Classes\\" : "./classes",  
+            "Ingcj\\AppSalonPhpMvcJsSass\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Juan Mohr"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

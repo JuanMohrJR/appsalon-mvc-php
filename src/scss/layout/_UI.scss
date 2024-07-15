@@ -1,0 +1,77 @@
+
+
+@use 'base/variables' as var;
+@use 'base/mixins' as mix;
+
+.contenedor-app {
+    @include mix.tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        min-height: 100vh;
+    }
+    .imagen {
+        height: 20rem;
+        background-image: url(../img/1.jpg);
+        background-size: cover;
+        background-position: center center;
+        @include mix.tablet {
+            height: auto;
+        }
+    }
+    .app {
+        width: 95%;
+        margin: 0 auto;
+        padding: 3rem 0;
+        @include mix.tablet {
+            overflow: scroll;
+        }
+    }
+
+}
+
+.nombre-pagina {
+    text-align: center;
+    margin: 5rem 0;
+
+
+}
+
+.descripcion-pagina {
+    text-align: center;
+}
+
+.barra {
+    margin-bottom: 4rem;
+    p {
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 2.4rem;
+
+    }
+
+
+    @include mix.tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+
+    .boton {
+        @include mix.boton(rgb(14, 0, 168), var.$blanco );
+        margin: 0;
+        width: 100%;
+
+    }
+}
+
+.barra-servicio {
+    margin-bottom: 4rem;
+
+    @include mix.tablet {
+        display: flex;
+        justify-content: space-between;
+    }
+    .boton {
+        margin: 1rem;
+    }
+}

@@ -1,0 +1,51 @@
+
+@use 'base/variables' as var;
+@use 'base/mixins' as mix;
+
+
+.citas {
+    list-style: none;
+    padding: 0;
+
+    li {
+        padding: 1rem;
+        border-top: 1px solid white;
+
+        p {
+            font-weight: var.$bold;
+            color: rgb(0, 179, 255);
+        }
+        span, .servicio {
+            font-weight: var.$regular;
+            color: white;
+        }
+        &:hover {
+            background-color: rgb(36, 36, 36);
+            border-radius: 1rem;   
+        }
+    }
+}
+
+.h2fecha {
+    color: rgb(203, 203, 203);
+    font-size: 2rem;
+}
+
+.servicios {
+    @extend .citas;
+
+    .acciones {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .boton, .boton-eliminar {
+        margin: 0;
+        color: aliceblue;
+
+
+    }
+
+
+}

@@ -1,0 +1,12 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mix;
+
+.boton {
+    @include mix.boton(blue, var.$blanco );
+    border-radius: 1rem;
+}
+
+.boton-eliminar {
+    @include mix.boton(rgb(153, 0, 0), var.$blanco );
+    border-radius: 1rem;
+}
